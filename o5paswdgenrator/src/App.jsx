@@ -1,5 +1,4 @@
 import { useState, useCallback } from "react";
-import "./App.css";
 
 function App() {
   const [length, setlength] = useState(8);
@@ -16,14 +15,25 @@ function App() {
 
     for (let i = 1; i <= array.length; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
-      pass=str.charAt(char);
+      pass = str.charAt(char);
     }
-    setPassword(pass)
+    setPassword(pass);
   }, [length, numberallowed, charAllowed, setPassword]);
 
   return (
     <>
-      <h1 className="text-4xl text-center text-white">Pasword genrator</h1>
+      <div className="w-full max-w-md  mx-auto shadow-md rounded-lg px-4  bg-gray-700 mt-20">
+        <h1 className="text-white text-center my-3  ">PasswordGenrator</h1>
+        <div className="flex shadow rounded-lg overflow-hidden mb-4 ">
+          <input
+            type="text"
+            value={pasword}
+            className="outerline-none  w-full py-1   rounded-lg "
+            readOnly
+          />
+          <button className="pl-10 text-white">copy</button>
+        </div>
+      </div>
     </>
   );
 }
