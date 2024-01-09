@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from"react-router-dom";
+import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="bg-white border-y">
@@ -35,7 +35,7 @@ export default function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/hiteshchoudhary"
+                                        href="https://github.com/mohdshoaibkhan72"
                                         className="hover:underline"
                                         target="_blank"
                                         rel="noreferrer"
